@@ -73,7 +73,10 @@ const CommentArea = (props) => {
     
   };
   useEffect(()=>{
-    funzione()
+    if(props.asin !== null){
+      funzione()
+    }
+    
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[props.asin] )   
