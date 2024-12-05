@@ -9,7 +9,7 @@ const SingleBook = (props) => {
 
   return (
     <>
-      <Card
+      <Card data-testid="card"
         // onClick={() => this.setState({ selected: !this.state.selected })}
         onClick={() =>props.changeSelectedBook(props.book.asin)}
         style={{

@@ -4,6 +4,7 @@ import { Col, Form, Row } from "react-bootstrap";
 import CommentArea from "./CommentArea";
 
 const BookList = (props) => {
+  
   const [searchQuery, setsearchQuery] = useState("");
   const [selectedBook, setselectedBook] = useState(null);
   
@@ -30,6 +31,7 @@ const BookList = (props) => {
           </Row>
           <Row className="g-2 mt-3">
             {props.books
+          
               .filter((b) =>
                 b.title.toLowerCase().includes(searchQuery)
               )
